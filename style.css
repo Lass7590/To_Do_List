@@ -1,0 +1,107 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 5vw;
+}
+
+form{
+    display: flex;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form label{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background:#4d4dee ;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    
+}
+
+form button:hover{
+    /* color: #000; */
+    background: transparent;
+    border: 1px solid #4d4dee;
+}
+
+.liste-tache{
+    list-style: none;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+    margin: 20px auto ;
+}
+
+li{
+    width: 100%;
+    padding: 5px;
+    background: #f1f1f1;
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+li input{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+li span {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+li button{
+    margin-left: auto;
+    /* padding: 5px; */
+    width: 40px;
+    cursor: pointer;
+}
+
+li button img{
+    width: 100%;
+    pointer-events: none;
+}
+
+li.finDeTache span{
+    text-decoration: line-through;
+}
